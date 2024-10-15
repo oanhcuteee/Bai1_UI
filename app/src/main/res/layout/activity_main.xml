@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Log In"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPlease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please sign to your existing account"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/tvLogIn"
+        app:layout_constraintStart_toStartOf="@id/tvLogIn"
+        app:layout_constraintTop_toBottomOf="@id/tvLogIn" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvShape"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/shape"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="EMAIL"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tvShape"
+        app:layout_constraintTop_toTopOf="@id/tvShape" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_email"
+        android:hint="example@gmail.com"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="@id/tvEmail"
+        app:layout_constraintStart_toStartOf="@id/tvEmail"
+        app:layout_constraintTop_toBottomOf="@id/tvEmail" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPassWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="PASSWORD"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/etEmail"
+        app:layout_constraintTop_toBottomOf="@id/etEmail" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etPassWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_email"
+        android:drawableEnd="@drawable/password_icon"
+        android:hint="* * * * * * * * "
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="@id/tvPassWord"
+        app:layout_constraintStart_toStartOf="@id/tvPassWord"
+        app:layout_constraintTop_toBottomOf="@id/tvPassWord" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cbRemember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/etPassWord"
+        app:layout_constraintTop_toBottomOf="@id/etPassWord" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRemeber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Remember me"
+        android:textColor="#B39D9D"
+        app:layout_constraintStart_toEndOf="@id/cbRemember"
+        app:layout_constraintTop_toBottomOf="@id/etPassWord" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Forgot PassWord"
+        android:textColor="#E64A19"
+        app:layout_constraintEnd_toEndOf="@id/etPassWord"
+        app:layout_constraintTop_toBottomOf="@id/etPassWord" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="60dp"
+        android:background="#F57C00"
+        android:text="LOG IN"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/etPassWord" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Don't have an account?"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/tv2"
+        app:layout_constraintStart_toStartOf="@id/btnLogIn"
+        app:layout_constraintTop_toBottomOf="@id/btnLogIn" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="SIGN UP"
+        android:textColor="#E64A19"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/btnLogIn"
+        app:layout_constraintStart_toEndOf="@id/tv1"
+        app:layout_constraintTop_toBottomOf="@id/btnLogIn" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Or"
+        android:textColor="#8DB7BC"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/btnLogIn"
+        app:layout_constraintStart_toStartOf="@id/btnLogIn"
+        app:layout_constraintTop_toBottomOf="@id/btnLogIn" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivFaceBook"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/facebook"
+        app:layout_constraintEnd_toStartOf="@id/ivTwitter"
+        app:layout_constraintStart_toStartOf="@id/btnLogIn"
+        app:layout_constraintTop_toBottomOf="@id/btnLogIn" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivTwitter"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/twitter"
+        app:layout_constraintEnd_toStartOf="@id/ivGitHub"
+        app:layout_constraintStart_toEndOf="@id/ivFaceBook"
+        app:layout_constraintTop_toBottomOf="@id/btnLogIn" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivGitHub"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/github"
+        app:layout_constraintEnd_toEndOf="@id/btnLogIn"
+        app:layout_constraintStart_toEndOf="@id/ivTwitter"
+        app:layout_constraintTop_toBottomOf="@id/btnLogIn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
